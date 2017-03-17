@@ -1,0 +1,24 @@
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="home">Mean Boilerplate</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="home">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="register" ng-if="!customNav.isLoggedIn()"><span class="fa fa-user-plus"></span> Sign Up</a></li>
+                    <li><a ui-sref="login" ng-if="!customNav.isLoggedIn()"><span class="fa fa-sign-in"></span> Login</a></li>
+                    <li><a ui-sref="logout" ng-if="customNav.isLoggedIn()"><span class="fa fa-sign-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

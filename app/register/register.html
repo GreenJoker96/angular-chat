@@ -1,0 +1,47 @@
+<div>
+    <custom-nav></custom-nav>
+    <div class="container">
+        <div class="login-form col-xs-12">
+            <form>
+                <div class="form-group">
+                    <div class="col-xs-6 double-input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" ng-model="register.registration.firstName">
+                    </div>
+                    <div class="col-xs-6 double-input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" ng-model="register.registration.lastName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6 double-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" class="form-control" id="phone" placeholder="Phone Number" ng-model="register.registration.phone">
+                    </div>
+                    <div class="col-xs-6 double-input">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" ng-model="register.registration.username">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" ng-model="register.registration.email">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="register.registration.password">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" ng-model="register.registration.confirmPassword">
+                </div>
+                <div class="col-xs-2">
+                    <button type="submit" class="btn btn-default" ng-click="register.createAccount()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

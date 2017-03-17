@@ -1,0 +1,14 @@
+<div>
+    <custom-nav></custom-nav>
+    <h1 class="text-center">Chat</h1>
+    <div>
+        <ul ng-repeat="message in chat.messages">
+            <li>{{message.body}}</li>
+        </ul>
+    </div>
+        <form action="">
+            <input tupe="text" ng-model="chat.message.body">
+            <button ng-click="chat.sendMessage()">Send</button>
+        </form>
+    </div>
+</div>
